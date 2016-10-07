@@ -1,0 +1,9 @@
+<ion-view view-title="Socials & Chats">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/social/{{playlist.id}}">
+        <img src="img/{{playlist.icon}}" class="social-icon"> {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -41,14 +41,13 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+.controller('SocialsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
+    { title: 'Facebook', id: 1, icon : 'facebook.png' },
+    { title: 'Google Hangouts', id: 2, icon : 'hangouts.png' },
+    { title: 'Twitter', id: 3, icon : 'twitter.png' },
+    { title: 'AIM', id: 4, icon : 'twitter.png' },
+    { title: 'WhatsApp', id: 5, icon : 'whatsapp.png' }
   ];
 })
 
