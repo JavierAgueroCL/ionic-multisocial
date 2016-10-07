@@ -42,14 +42,22 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SocialsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Facebook', id: 1, icon : 'facebook.png' },
-    { title: 'Google Hangouts', id: 2, icon : 'hangouts.png' },
-    { title: 'Twitter', id: 3, icon : 'twitter.png' },
-    { title: 'AIM', id: 4, icon : 'twitter.png' },
-    { title: 'WhatsApp', id: 5, icon : 'whatsapp.png' }
+  $scope.socials = [
+    { title: 'Facebook', id: "facebook", icon : 'facebook.png' }
+    // { title: 'Google Hangouts', id: 2, icon : 'hangouts.png' },
+    // { title: 'Twitter', id: 3, icon : 'twitter.png' },
+    // { title: 'AIM', id: 4, icon : 'twitter.png' },
+    // { title: 'WhatsApp', id: 5, icon : 'whatsapp.png' }
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('FacebookCtrl', function($scope, $stateParams) {
+
+
+  $scope.amigos = [
+    { nombre: 'Juan Perez Gonzales', fbid: 345638762346, avatar : 'avatar.jpg' },
+    { nombre: 'Victor Acuña Salazar', fbid: 945389457343, avatar : 'avatar.jpg' },
+    { nombre: 'Constanza Zuñiga Barrientos', fbid: 843583495, avatar : 'avatar.jpg' },
+    { nombre: 'Cristian Godoy Hernandes', fbid: 834895793852, avatar : 'avatar.jpg' }
+  ];
 });

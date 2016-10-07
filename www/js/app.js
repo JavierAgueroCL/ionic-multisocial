@@ -49,6 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+
     .state('app.socials', {
       url: '/socials',
       views: {
@@ -59,15 +60,25 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     })
 
-  .state('app.single', {
-    url: '/social/:playlistId',
+  .state('app.facebook', {
+    url: '/social/facebook',
     views: {
       'menuContent': {
-        templateUrl: 'templates/social.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/social.facebook.html',
+        controller: 'FacebookCtrl'
       }
     }
-  });
+  })
+  .state('app.facebook_chat', {
+    url: '/social/facebook/chat/:fbid',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/social.facebook.chat.html',
+        controller: 'FacebookCtrl'
+      }
+    }
+  })
+  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/socials');
 });
