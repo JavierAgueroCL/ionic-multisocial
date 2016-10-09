@@ -52,12 +52,20 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FacebookCtrl', function($scope, $stateParams) {
-
-
   $scope.amigos = [
     { nombre: 'Juan Perez Gonzales', fbid: 345638762346, avatar : 'avatar.jpg' },
     { nombre: 'Victor Acuña Salazar', fbid: 945389457343, avatar : 'avatar.jpg' },
     { nombre: 'Constanza Zuñiga Barrientos', fbid: 843583495, avatar : 'avatar.jpg' },
     { nombre: 'Cristian Godoy Hernandes', fbid: 834895793852, avatar : 'avatar.jpg' }
+  ];
+
+})
+
+.controller('FacebookChatCtrl', function($scope, $stateParams) {
+  // $scope.friendid = $stateParams.fbid;
+  $scope.friendid = 'Constanza Zuñiga Barrientos';
+  $scope.mensajes = [
+    { texto: 'Hola!', msgid: 345638762346, from : 'me', date: '12-11-1988 12:23' },
+    { texto: 'Como estas?', msgid: 345638762346, from : 'friend', date: '12-11-1988 12:23' }
   ];
 });

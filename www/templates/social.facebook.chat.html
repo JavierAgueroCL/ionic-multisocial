@@ -1,9 +1,9 @@
-<ion-view view-title="{{amigos[0].fbid}}">
+<ion-view view-title="{{friendid}}">
   <ion-content>
-    <!--ion-list>
-      <ion-item ng-repeat="amigo in amigos" href="#/app/social/facebook/chat/{{amigo.fbid}}">
-        <img src="img/{{amigo.avatar}}" class="social-icon"> {{amigo.nombre}}
-      </ion-item>
-    </ion-list-->
+    <ion-list>
+      <ul ng-repeat="mensaje in mensajes">
+        <li class="msg {{mensaje.from}}">{{mensaje.texto}}</li>
+      </ul>
+    </ion-list>
   </ion-content>
 </ion-view>

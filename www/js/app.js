@@ -69,16 +69,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+
   .state('app.facebook_chat', {
     url: '/social/facebook/chat/:fbid',
     views: {
       'menuContent': {
         templateUrl: 'templates/social.facebook.chat.html',
-        controller: 'FacebookCtrl'
+        controller: 'FacebookChatCtrl'
       }
     }
-  })
-  ;
+  });
+  
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/socials');
 });
