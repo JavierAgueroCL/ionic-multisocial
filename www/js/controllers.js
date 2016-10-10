@@ -66,6 +66,9 @@ angular.module('starter.controllers', [])
   $scope.friendid = 'Constanza Zuñiga Barrientos';
   $scope.mensajes = [
     { texto: 'Hola!', msgid: 345638762346, from : 'me', date: '12-11-1988 12:23' },
-    { texto: 'Como estas?', msgid: 345638762346, from : 'friend', date: '12-11-1988 12:23' }
+    { texto: 'Como estas?', msgid: 345638762346, from : 'friend', date: '12-11-1988 12:23' },
+    { texto: 'Excelente!', msgid: 345638762346, from : 'me', date: '12-11-1988 12:23' },
+    { texto: 'y tu?', msgid: 345638762346, from : 'me', date: '12-11-1988 12:23' },
+    { texto: 'de maravilla, al menos hoy', msgid: 345638762346, from : 'friend', date: '12-11-1988 12:23' }
   ];
 });
