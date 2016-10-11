@@ -43,11 +43,11 @@ angular.module('starter.controllers', [])
 
 .controller('SocialsCtrl', function($scope) {
   $scope.socials = [
-    { title: 'Facebook', id: "facebook", icon : 'facebook.png' }
-    // { title: 'Google Hangouts', id: 2, icon : 'hangouts.png' },
-    // { title: 'Twitter', id: 3, icon : 'twitter.png' },
-    // { title: 'AIM', id: 4, icon : 'twitter.png' },
-    // { title: 'WhatsApp', id: 5, icon : 'whatsapp.png' }
+    { title: 'Facebook', id: "facebook", icon : 'facebook.png' },
+    { title: 'Google Hangouts', id: 2, icon : 'hangouts.png' },
+    { title: 'Twitter', id: 3, icon : 'twitter.png' },
+    { title: 'AIM', id: 4, icon : 'twitter.png' },
+    { title: 'WhatsApp', id: 5, icon : 'whatsapp.png' }
   ];
 })
 

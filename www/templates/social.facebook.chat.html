@@ -1,9 +1,15 @@
 <ion-view view-title="{{friendid}}">
   <ion-content>
     <ion-list>
-      <ul ng-repeat="mensaje in mensajes">
-        <li class="msg {{mensaje.from}}">{{mensaje.texto}}</li>
+      <ul>
+        <li ng-repeat="mensaje in mensajes" class="msg {{mensaje.from}}">{{mensaje.texto}}</li>
       </ul>
     </ion-list>
+    
   </ion-content>
+	<ion-footer-bar align-title="left">
+		<ion-item class="chatbox">
+			<ion-textarea [(ngModel)]="msg">Escribe un mensaje</ion-textarea>
+		</ion-item>
+	</ion-footer-bar>
 </ion-view>
